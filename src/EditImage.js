@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
 import './EditImage.css';
@@ -8,7 +8,7 @@ function EditImage()
  
   const params = useParams();
   const[images,setImages] = useState({});
-  const[error,setError] = useState("");
+  
   const cssObj = {
                     blur:images.blur,
                     contrast:images.contrast,
